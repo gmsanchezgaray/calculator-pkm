@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Pokemon</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="pokedex">
+            <div id="left-part">
+                <div class="shadow-top"></div>
+                <div id="top-indicators">
+                    <div class="indicators-container">
+                        <div class="l-blue"></div>
+                        <div class="l-red"></div>
+                        <div class="l-yellow"></div>
+                        <div class="l-green"></div>
+                    </div>
+                </div>
+                <div id="left-part-inside">
+                    <svg class="stroke-right" viewBox="0 0 313 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.00012 75.6378V381.299C1.00012 393.449 10.8499 403.299 23.0001 403.299H291.851C302.896 403.299 311.851 394.345 311.851 383.299V8.00001C311.851 4.13402 308.717 1 304.851 1H226.261C215.42 1 204.763 3.79736 195.32 9.12155L96.2173 64.9969C90.8212 68.0393 84.7313 69.6378 78.5366 69.6378H7.00012C3.6864 69.6378 1.00012 72.3241 1.00012 75.6378Z" stroke="#89061c" stroke-width="2"/>
+                    </svg>
+                        <div class="frame-screen">
+                            <div class="wrapper">
+                                <div class="btn-sm-red"></div>
+                                <div class="btn-sm-red"></div>
+                            </div>
+                            <div class="frame">
+                                <img id="state" src="./assets/idle.jpg" alt="">
+                            </div>
+                            <div class="wrapper">
+                                <div class="btn-md-red"></div>
+                                <div class="speaker"></div>
+                            </div>
+                        </div>   
+                        <div class="wrapper">
+                            <div class="btn-lg-black"></div>
+                            <div class="wrapper">
+                                <span class="thin-btn"></span>
+                                <span class="thin-btn"></span>
+                            </div>
+                            <div class="cross">
+                                <p id="caption">Calculate something</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="flex">
+                <div class="flex-short"></div>
+                <div class="flex-long"></div>
+                <div class="flex-short"></div>
+            </div>
+            <div id="right-part">
+                <svg class="stroke-right" viewBox="0 0 313 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M311.85 75.6378V381.299C311.85 393.449 302.001 403.299 289.85 403.299H21C9.95431 403.299 1 394.345 1 383.299V8.00001C1 4.13402 4.13401 1 8 1H86.5894C97.4301 1 108.087 3.79736 117.531 9.12155L216.633 64.9969C222.029 68.0393 228.119 69.6378 234.314 69.6378H305.85C309.164 69.6378 311.85 72.3241 311.85 75.6378Z" stroke="#89061c" stroke-width="2"/>
+                </svg>
+                <form>
+                    <div id="show"></div>
+
+                    <div class="buttons-container">
+                        <button id="switch" data-sp="switch">+/-</button>
+                        <button class="op" data-op="divide">/</button>
+                        <button class="op" data-op="multiply">*</button>
+                        <button class="op" data-op="subtract">-</button>
+                        <button class="num" data-num="7">7</button>
+                        <button class="num" data-num="8">8</button>
+                        <button class="num" data-num="9">9</button>
+                        <button class="op" data-op="add">+</button>
+                        <button class="num" data-num="4">4</button>
+                        <button class="num" data-num="5">5</button>
+                        <button class="num" data-num="6">6</button>
+                        <button id="C" data-op="clear">C</button>
+                        <button class="num" data-num="1">1</button>
+                        <button class="num" data-num="2">2</button>
+                        <button class="num" data-num="3">3</button>
+                        <button id="submit" type="submit">=</button>
+                        <button class="num" data-num="0">0</button>
+                        <button id="dot" data-sp=".">.</button>
+                        <button id="delete" data-op="delete"><</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
